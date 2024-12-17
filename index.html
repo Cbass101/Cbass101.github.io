@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" href="Images/favicon.ico">
+        <meta charset="UTF-8">
+        <title>RS Report</title>
+        <link rel="stylesheet" href="CSS/design.css">
+        
+    </head>
+    <body>
+        <header>
+            <img src="Images/RS Home page.png" alt="hub" style="width: 100%; max-width:600px;">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="News page.html">News</a></li>
+                <li><a href="Event.html">Events</a></li>
+                <li><a href="Interview.html">FrankenSteel</a></li>
+            </ul>
+        </nav>
+        <h1>Current Events</h1>
+        <h2>Welcome to the RS Report. A place where you can find the best car related info.</h2>
+        <div>
+            <img id="slider" src="Images/Slider1.JPG" alt="Slider Image" style="width:75%;">
+        </div>
+        
+        <script> // Below is some JavaScript creating a slider to show the next image.
+            const images = ["Images/Slider1.JPG", "Images/Slider2.JPG", "Images/EventPic4.JPG", "Images/Slider4.JPG", "Images/Slider5.JPG", "Images/Slider6.JPG"];
+            let currentIndex = 0;
+        
+            function changeImage() {
+                currentIndex = (currentIndex + 1) % images.length;
+                document.getElementById("slider").src = images[currentIndex];
+            }
+        
+            setInterval(changeImage, 5000); // Change image every 5 seconds
+        </script>
+        <section>
+                <a href="News page.html"><img src="Images/TeslaCT1.png" alt="cover1x" width="800" height="400"></a>
+                <h2>News</h2>
+                <p>Keep up with today's car related news and articles.</p>
+        </section>
+    
+        <section>
+            <a href="Event.html"><img src="Images/EventPic1.JPG" alt="cover2x" width="500" height="300"></a>
+           <h2>Events</h2>
+           <p>Browse photos from local events in the area.</p>
+        </section>
+        
+        <section>
+            <a href="Interview.html"><img src="Images/OpeningPicFS.JPG" alt="cover3" width="800" height="400"></a>
+            <h2>FrankenSteel</h2>
+            <p>Read about the average Joe and their metal creation.</p>
+        </section>
+        <a href="https://youtu.be/dQw4w9WgXcQ?si=FoqfU1ETMwE5j7oF"><img src="Images/Click2Win.png" alt="ad" width="1000" height="150"></a>
+    </body>
+</html>
